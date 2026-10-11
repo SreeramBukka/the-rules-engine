@@ -480,3 +480,43 @@ If you have broader questions, open an issue for discussion.
 MIT License.
 
 See LICENSE for details.
+
+
+tasks:
+1
+
+Add a new comparison operator
+Add an operator that checks whether a string starts with a given prefix.
+- Follow the existing operator design.
+- Add tests for matching, non-matching, and empty strings.
+- Preserve existing behavior.
+
+
+
+2
+
+Handle missing properties
+Make rules referencing missing object properties behave predictably.
+- Follow existing error-handling conventions.
+- Cover missing parent objects and missing leaf properties.
+- Avoid unrelated refactoring.
+
+
+
+3
+
+Add a NOT condition
+If not already supported in the relevant form, allow a rule condition to be negated.
+- Reuse the existing condition model.
+- Test true, false, and nested cases.
+- Preserve AND and OR semantics.
+
+
+
+4
+
+Improve rule priority behavior
+Ensure rules with higher priority execute before lower-priority rules, while preserving existing tie-breaking behavior.
+- Inspect the existing conflict-resolution mechanism first.
+- Add tests for different and equal priorities.
+- Keep the implementation readable.
